@@ -1,4 +1,4 @@
-# Bank Report Converter
+# Bank Report Parser Indonesia
 
 This project is a simple web application that converts bank statements into CSV format. It supports various bank formats and allows users to select the type of statement, upload the PDF, and download the parsed transactions in CSV format.
 
