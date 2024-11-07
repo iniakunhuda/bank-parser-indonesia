@@ -31,7 +31,7 @@ This project is a simple web application that converts bank statements into CSV 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/bank-report-converter.git
+    git clone https://github.com/iniakunhuda/bank-parser-indonesia.git
     cd bank-report-converter
     ```
 
