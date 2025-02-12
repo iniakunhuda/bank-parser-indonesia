@@ -138,7 +138,7 @@ export function App() {
 						value={file}
 						icon={<IconUpload size={14} />}
 						onChange={onChange}
-						placeholder="Upload Bank Report"
+						label="Upload Bank Report"
 					/>
 					<Button
 						variant="outline"
