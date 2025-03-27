@@ -8,7 +8,11 @@ import {
 	Title,
 } from "@mantine/core";
 import { useEffect, useState } from "react";
-import { parseBCAStatement, parseMandiriCCStatement, parseMandiriStatement, TrxRecord } from "@fahmifan/bank-statement-parser-id";
+
+import { TrxRecord } from "./parser/shared";
+import { parseBCAStatement } from "./parser/bca_parser";
+import { parseMandiriStatement } from "./parser/mandiri_parser";
+import { parseMandiriCCStatement } from "./parser/mandiri_cc_parser";
 
 import { IconDownload, IconUpload } from "@tabler/icons-react";
 import { json2csv } from "json-2-csv";
