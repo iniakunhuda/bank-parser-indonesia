@@ -178,7 +178,6 @@ function parseMandiriPage(items: TextItem[], year: number): TrxRecord[] {
         // Extract description - use a different approach
         // Get all items between first cell and amount, sorted by x and y positions
         const descItems = row.filter(item => 
-            item !== firstCell && 
             item !== amountItem && 
             item !== balanceItem && 
             item !== dateItem &&
@@ -355,7 +354,7 @@ function groupIntoRows(items: PositionedItem[]): PositionedItem[][] {
     // Convert to array and sort by y-position (top to bottom)
     return Array.from(rows.entries())
         .sort((a, b) => b[0] - a[0]) // Sort by y-position (descending)
-        .map(([_, rowItems]) => rowItems);
+        .map(([, rowItems]) => rowItems);
 }
 
 // Find the header row in the grouped rows
